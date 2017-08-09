@@ -26,7 +26,7 @@
 				<groupId>org.apache.tomcat.maven</groupId>
 				<artifactId>tomcat7-maven-plugin</artifactId>
 				<configuration>
-					<port>8080</port>
+					<port>8082</port>
 					<path>/</path>
 				</configuration>
 			</plugin>
@@ -39,6 +39,5 @@
 		<module>h7n9_manager_dao</module>
 		<module>h7n9_manager_interface</module>
 		<module>h7n9_manager_service</module>
-		<module>h7n9_manager_web</module>
 	</modules>
 </project>
