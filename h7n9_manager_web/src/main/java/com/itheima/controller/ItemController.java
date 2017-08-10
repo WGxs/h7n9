@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.itheima.pojo.E3Result;
 import com.itheima.pojo.EasyUIDataGridResult;
 import com.itheima.pojo.TbItem;
 import com.itheima.service.ItemService;
@@ -63,5 +64,19 @@ public class ItemController {
 		EasyUIDataGridResult result = itemService.getResult(page, rows);
 		
 		return result;
+	}
+	
+	/**
+	 * 添加商品
+	 * @return
+	 */
+	@RequestMapping("/item/save")
+	public E3Result addItem(TbItem tbItem, String desc)
+	{
+		
+		//调用业务层方法
+		E3Result addItem = itemService.addItem(tbItem, desc);
+		
+		return addItem;
 	}
 }

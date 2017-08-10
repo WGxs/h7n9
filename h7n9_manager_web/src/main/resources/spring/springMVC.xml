@@ -24,7 +24,7 @@
 	
 	<!-- 引用dubbo服务 -->
 	<dubbo:application name="h7n9-manager-web"/>
-	<dubbo:registry protocol="zookeeper" address="192.168.245.128:2181"/>	
+	<dubbo:registry protocol="zookeeper" address="192.168.25.128:2181"/>	
 	<dubbo:reference interface="com.itheima.service.ItemService" id="itemService" timeout="300000" />
 	<dubbo:reference interface="com.itheima.service.ItemCatService" id="itemCatService" timeout="300000" />
 
